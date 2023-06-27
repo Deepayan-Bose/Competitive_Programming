@@ -10,7 +10,7 @@ void bubble_sort(int a[],int n){
 		// swapped flag used in case no swapping occurs, i.e to check if array already sorted
 		bool swapped=false;
 		//pairwise swapping in the unsorted array
-		for(int j=i;j<n-1-i;j++) if(a[j]>a[j+1]) {swap(a[j],a[j+1]); swapped=true;}
+		for(int j=0;j<n-1-i;j++) if(a[j]>a[j+1]) {swap(a[j],a[j+1]); swapped=true;}
 		if(swapped==false) break;
 	}
 }
